@@ -1,12 +1,14 @@
 import React from 'react';
-import "./App.js"
-import Todo from "./Todo.js"
+import "./App.css"
+import Todo from "./Todo"
 
 function App() {
   return (
     <div className="App">
       <h1>Todo app</h1>
-      <Todo />
+      <input type="text"/>
+      <button>Add todo</button>
+      <Todo title="Take dogs"/>
     </div>  
   );
 }

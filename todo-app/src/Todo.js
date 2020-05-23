@@ -1,13 +1,13 @@
 
  import React from 'react';
  
- const h1 = () => {
+ const Todo = (props) => {
      return (
          <div>
-             <h1>This is todo</h1>
+             <h1>{props.title}</h1>
          </div>
      );
  };
  
- export default h1;
+ export default Todo;
 
