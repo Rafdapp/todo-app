@@ -18,9 +18,17 @@ function App() {
   return (
     <div className="App">
       <h1>Todo app</h1>
-      <input value={input} onChange = {e => setInput(e.target.value) }type="text"/>
+      <input 
+        value={input} 
+        onChange = {(e) => setInput(e.target.value) }
+        type="text"
+      />
       <button onClick = {addTodo}>Add todo</button>; 
-      <Todo title="Take dogs"/>
+      {todos.map(todo => {
+        return (
+          <Todo title ={todo} />
+        )
+      })}
     </div>  
   );
 }
