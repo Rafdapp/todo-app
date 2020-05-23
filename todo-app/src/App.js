@@ -1,12 +1,13 @@
 import React from 'react';
-
-import './App.css';
+import "./App.js"
+import Todo from "./Todo.js"
 
 function App() {
   return (
     <div className="App">
-      <h1>Todo app</h1>  
-    </div>
+      <h1>Todo app</h1>
+      <Todo />
+    </div>  
   );
 }
 
